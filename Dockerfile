@@ -1,4 +1,4 @@
-FROM vektorlab/base:latest
+FROM quay.io/vektorcloud/base:latest
 
 RUN apk add --no-cache python3 && \
     wget -q "https://bootstrap.pypa.io/get-pip.py" -O /dev/stdout | python3 && \
