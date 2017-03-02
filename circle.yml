@@ -5,12 +5,7 @@ machine:
 dependencies:
   override:
     - docker info
-    - |
-      if [[ "$CIRCLE_BRANCH" == "master" ]]; then
-        docker build -t quay.io/${CIRCLE_PROJECT_USERNAME}/python:3 .
-      else
-        docker build -t quay.io/${CIRCLE_PROJECT_USERNAME}/python:${CIRCLE_BRANCH} .
-      fi
+    - docker build -t quay.io/${CIRCLE_PROJECT_USERNAME}/python:3 .
 
 test:
   override:
