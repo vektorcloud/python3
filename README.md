@@ -1,6 +1,6 @@
 # python3
 
-![circleci][circleci]
+[![circleci][circleci]](https://circleci.com/gh/vektorcloud/python3)
 
 Alpine-based Python image
 
