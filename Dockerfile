@@ -1,5 +1,5 @@
-FROM quay.io/vektorcloud/base:3.9
+FROM quay.io/vektorcloud/base:3.14
 
-RUN apk add --no-cache python3 python3-dev && \
-    ln -s /usr/bin/python3 /usr/bin/python && \
-    ln -s /usr/bin/pip3 /usr/bin/pip
+RUN apk add --no-cache python3 python3-dev py3-pip && \
+    ln -s /usr/bin/python3 /usr/bin/python
+
